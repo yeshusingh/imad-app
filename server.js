@@ -52,6 +52,7 @@ func createTemplate(data) {
         </body>
     </html>
     `;
+    return htmlTemplate;
 }
 
 
