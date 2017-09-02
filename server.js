@@ -26,11 +26,11 @@ var articlesTwo : {
                 </p>`
 },
 var articlesThree : {
-    title: 'Article Two | Yeshu',
+    title: 'Article Three | Yeshu',
     date: 'September 2017',
-    heading: 'Article Two',
+    heading: 'Article Three',
     content: `    <p>
-                    This is content of my second article. 
+                    This is content of my third article. 
                 </p>`
 }
 };
