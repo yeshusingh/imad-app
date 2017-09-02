@@ -17,7 +17,7 @@ var articleOne = {
                 </p>`
 };
 
-func createTemplate(data) {
+function createTemplate(data) {
     
     var title = data.title;
     var heading = data.heading;
