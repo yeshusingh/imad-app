@@ -17,8 +17,22 @@ var articleOne : {
                     This is content of my firt article. This is content of my first article.This is content of my firt article. This is content of my first article.This is content of my firt article. This is content of my first article.This is content of my firt article. This is content of my first article.This is content of my firt article. This is content of my first article.This is content of my firt article. This is content of my first article.This is content of my firt article. This is content of my first article.This is content of my firt article. 
                 </p>`
 },
-var articlesTwo : {},
-var articlesThree : {}
+var articlesTwo : {
+    title: 'Article Two | Yeshu',
+    date: 'September 2017',
+    heading: 'Article Two',
+    content: `    <p>
+                    This is content of my second article. 
+                </p>`
+},
+var articlesThree : {
+    title: 'Article Two | Yeshu',
+    date: 'September 2017',
+    heading: 'Article Two',
+    content: `    <p>
+                    This is content of my second article. 
+                </p>`
+}
 };
 
 function createTemplate (data) {
