@@ -16,10 +16,11 @@ button.onclick = function () {
             console.log('ready state');
             
             if (request.state === 200) {
+                console.log('req success');
                 var counter = request.responseText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
-                console.log('after counter')
+                console.log('after counter');
                 // console.log(counter.toString());
                  span.innerHTML = 99;
             }
