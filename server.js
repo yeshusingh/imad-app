@@ -65,6 +65,12 @@ function createTemplate (data) {
                 </div>
                 <div>
                     ${content}
+                    <hr/>
+                    <input type="text" id="comment" placeholder="enter comment"></input>
+                    <input type="submit" value="Submit" id="submit_comment"></input>
+                    <ul id="commentlist">
+                        
+                    </ul>
                 </div>
             </div>
         </body>
