@@ -75,24 +75,24 @@ function createTemplate (data) {
             </div>
         // <script type="text/javascript" src="/ui/mainComment.js">
         // </script>
-        <script>
-            console.log('mainComment');
-            var submitComment = document.getElementById('submit_comment');
-            submitComment.onclick = function() {
-                console.log('clicked');
+        // <script>
+        //     console.log('mainComment');
+        //     var submitComment = document.getElementById('submit_comment');
+        //     submitComment.onclick = function() {
+        //         console.log('clicked');
 
-                var request = new XMLHttpRequest();
-                request.onreadystatechange = function() {
-                    console.log('req status change');
-                };
-            };
+        //         var request = new XMLHttpRequest();
+        //         request.onreadystatechange = function() {
+        //             console.log('req status change');
+        //         };
+        //     };
             
-            var commentInput = document.getElementById('comment');
-            var comment = commentInput.value;
-            request.open('GET', 'http://yeshusingh.imad.hasura-app.io/article-one1?comment='+ comment, true);
-            request.send(null);
+        //     var commentInput = document.getElementById('comment');
+        //     var comment = commentInput.value;
+        //     request.open('GET', 'http://yeshusingh.imad.hasura-app.io/article-one1?comment='+ comment, true);
+        //     request.send(null);
             
-        </script>
+        // </script>
         </body>
     </html>
     `;
