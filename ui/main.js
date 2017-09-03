@@ -19,9 +19,6 @@ button.onclick = function () {
                 var counter = request.responseText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
-                console.log('after counter');
-                // console.log(counter.toString());
-                 //span.innerHTML = 99;
             }
         }
     };
