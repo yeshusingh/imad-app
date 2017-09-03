@@ -7,17 +7,17 @@ button.onclick = function () {
     console.log('button clicked');
     var request = new XMLHttpRequest();
     
-    // request.onreadystatechange = function () {
-    //     console.log('test1');
-    //     if(request.ReadyState === XMLHttpRequest.DONE) {
-    //         if (request.state === 200) {
-    //             var counter = request.responseText;
-    //             var span = document.getElementById('count');
-    //             span.innerHTML = counter.toString();
-    //              span.innerHTML = 99;
-    //         }
-    //     }
-    // };
+    request.onreadystatechange = function () {
+        console.log('test1');
+        if(request.ReadyState === XMLHttpRequest.DONE) {
+            if (request.state === 200) {
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+                 span.innerHTML = 99;
+            }
+        }
+    };
     
     // counter =  counter + 1;
     // var span = document.getElementById('count');
