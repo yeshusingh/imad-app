@@ -74,7 +74,7 @@ function createTemplate (data) {
                 </div>
 
             </div>
-            <script type="text/javascript" src="/ui/main.js">
+            <script type="text/javascript" src="/ui/mainComment.js">
             </script>
         </body>
     </html>
@@ -93,6 +93,10 @@ app.get('/ui/style.css', function (req, res) {
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+app.get('/ui/mainComment.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'mainComment.js'));
 });
 
 var counter = 0;
