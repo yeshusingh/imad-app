@@ -22,7 +22,7 @@ button.onclick = function () {
                 span.innerHTML = counter.toString();
                 console.log('after counter');
                 // console.log(counter.toString());
-                 span.innerHTML = 99;
+                 //span.innerHTML = 99;
             }
         }
     };
