@@ -81,7 +81,7 @@ function createTemplate (data) {
             submitComment.onclick = function() {
                 console.log('clicked');
 
-
+                var request = new XMLHttpRequest();
                 
                 
             };
