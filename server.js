@@ -81,7 +81,7 @@ function createTemplate (data) {
             submitComment.onclick = function() {
                 console.log('clicked');
                 
-                var request = new XMLHttpRequest();
+                // var request = new XMLHttpRequest();
     
                 // request.onreadystatechange = function () {
                 //     console.log(`${request.status}`);
