@@ -24,6 +24,6 @@ submitComment.onclick = function() {
     
     var commentInput = document.getElementById('comment');
     var comment = commentInput.value;
-    request.open('GET', 'http://yeshusingh.imad.hasura-app.io/article-one/comment?comment='+ comment, true);
+    request.open('GET', 'http://yeshusingh.imad.hasura-app.io/article-one/text?comment='+ comment, true);
     request.send(null);
 };
