@@ -93,6 +93,21 @@ function createTemplate (data) {
     return htmlTemplate;
 }
 
+// console.log(`${request.status}`);
+        
+//         if(request.readyState === XMLHttpRequest.DONE) {
+//             if (request.status === 200) {
+//                   var comments = request.responseText;
+//                   comments = JSON.parse(comments);
+//                   var list = '';
+//                   for(var i=0; i<comments.length; i++) {
+//                       list += '<li>' + comments[i] + '</li>';
+//                   }
+//                   var ul = document.getElementById('commentlist');
+//                   ul.innerHTML = list; 
+//             }
+//         }
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
