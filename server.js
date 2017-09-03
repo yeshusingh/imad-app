@@ -83,22 +83,22 @@ function createTemplate (data) {
                 
                 var request = new XMLHttpRequest();
     
-                request.onreadystatechange = function () {
-                    console.log(`${request.status}`);
+                // request.onreadystatechange = function () {
+                //     console.log(`${request.status}`);
                     
-                    if(request.readyState === XMLHttpRequest.DONE) {
-                        if (request.status === 200) {
-                              var comments = request.responseText;
-                              comments = JSON.parse(comments);
-                              var list = '';
-                              for(var i=0; i<comments.length; i++) {
-                                  list += '<li>' + comments[i] + '</li>';
-                              }
-                              var ul = document.getElementById('commentlist');
-                              ul.innerHTML = list; 
-                        }
-                    }
-                };
+                //     if(request.readyState === XMLHttpRequest.DONE) {
+                //         if (request.status === 200) {
+                //               var comments = request.responseText;
+                //               comments = JSON.parse(comments);
+                //               var list = '';
+                //               for(var i=0; i<comments.length; i++) {
+                //                   list += '<li>' + comments[i] + '</li>';
+                //               }
+                //               var ul = document.getElementById('commentlist');
+                //               ul.innerHTML = list; 
+                //         }
+                //     }
+                // };
                 
                 
             };
