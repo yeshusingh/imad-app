@@ -10,12 +10,13 @@ button.onclick = function () {
     request.onreadystatechange = function () {
         console.log('test1');
         if(request.ReadyState === XMLHttpRequest.DONE) {
+            console.log('ready state')
             if (request.state === 200) {
                 var counter = request.responseText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
-                console.log('after counter')
-                console.log(counter.toString());
+                // console.log('after counter')
+                // console.log(counter.toString());
                  span.innerHTML = 99;
             }
         }
