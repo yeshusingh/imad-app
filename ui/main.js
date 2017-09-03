@@ -15,7 +15,7 @@ button.onclick = function () {
             
             console.log('ready state');
             
-            if (request.state === 200) {
+            if (request.status === 200) {
                 console.log('req success');
                 var counter = request.responseText;
                 var span = document.getElementById('count');
