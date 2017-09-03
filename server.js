@@ -79,6 +79,7 @@ function createTemplate (data) {
             console.log('mainComment');
             var submitComment = document.getElementById('submit_comment');
             submitComment.onclick = function() {
+                console.log('clicked');
             };
         </script>
         </body>
