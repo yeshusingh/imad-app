@@ -2,7 +2,7 @@ console.log('mainComment');
 
 var submitComment = document.getElementById('submit_comment');
 submitComment.onclick = function() {
-  console.log('clicked');
+  //console.log('clicked');
   var request = new XMLHttpRequest();
     
     request.onreadystatechange = function () {
