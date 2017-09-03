@@ -9,6 +9,7 @@ button.onclick = function () {
     
     request.onreadystatechange = function () {
         console.log('test1');
+        console.log(crequest.onreadystatechange);
         if(request.ReadyState === XMLHttpRequest.DONE) {
             console.log('ready state')
             if (request.state === 200) {
