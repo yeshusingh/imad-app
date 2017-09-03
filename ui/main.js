@@ -1,6 +1,12 @@
 console.log('Loaded!');
 
 
+var button = document.getElementById('counter');
+button.onclick = function () {
+    
+};
+
+
 // var element = document.getElementById('main-text');
 // element.innerHTML = "new value";
 
