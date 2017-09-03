@@ -11,9 +11,6 @@ button.onclick = function () {
         console.log(`${request.status}`);
         
         if(request.readyState === XMLHttpRequest.DONE) {
-            
-            console.log('ready state');
-            
             if (request.status === 200) {
                 console.log('req success');
                 var counter = request.responseText;
