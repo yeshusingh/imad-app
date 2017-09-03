@@ -83,7 +83,7 @@ function createTemplate (data) {
 
                 var request = new XMLHttpRequest();
                 request.onreadystatechange = function() {
-                    
+                    console.log('req status change');
                 };
             };
         </script>
