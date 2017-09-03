@@ -73,7 +73,7 @@ function createTemplate (data) {
                     </ul>
                 </div>
             </div>
-        <script type="text/javascript" src="/ui/main.js">
+        <script type="text/javascript" src="/ui/mainComment.js">
         </script>
         </body>
     </html>
