@@ -109,6 +109,12 @@ app.get('/submit-name', function(req, res) {
     res.send(JSON.stringify(names));
 }) ;
 
+var comments = [];
+app.get('/article-one', function(req, res) {
+    var comment = req.query.comment;
+    comments.push(comment);
+    res.send(JSON.stringify(comments));
+}) ;
 
 app.get('/:articleName', function(req, res) {
     //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
