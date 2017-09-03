@@ -78,11 +78,11 @@ submitComment.onclick = function() {
         }
     };
     
-//     var commentInput = document.getElementById('comment');
-//     var comment = commentInput.value;
-//     request.open('GET', 'http://yeshusingh.imad.hasura-app.io/article-one1?comment='+ comment, true);
-//     request.send(null);
-// };
+    var commentInput = document.getElementById('comment');
+    var comment = commentInput.value;
+    request.open('GET', 'http://yeshusingh.imad.hasura-app.io/article-one1?comment='+ comment, true);
+    request.send(null);
+};
 
 // var element = document.getElementById('main-text');
 // element.innerHTML = "new value";
