@@ -32,6 +32,8 @@ button.onclick = function () {
     
     request.open('GET', 'http://yeshusingh.imad.hasura-app.io/counter', true);
     request.send(null);
+    
+    console.log(`${request}`);
 };
 
 
