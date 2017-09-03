@@ -19,9 +19,9 @@ button.onclick = function () {
     //     }
     // };
     
-    counter =  counter + 1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    // counter =  counter + 1;
+    // var span = document.getElementById('count');
+    // span.innerHTML = counter.toString();
     
     request.open('GET', 'http://yeshusingh.imad.hasura-app.io/counter', true);
     request.send(null);
