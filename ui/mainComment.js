@@ -1,3 +1,5 @@
+console.log('mainComment.js');
+
 var submitComment = document.getElementById('submit_comment');
 submitComment.onclick = function() {
   
