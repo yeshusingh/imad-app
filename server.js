@@ -75,6 +75,9 @@ function createTemplate (data) {
             </div>
         // <script type="text/javascript" src="/ui/mainComment.js">
         // </script>
+        <script>
+            console.log('mainComment');
+        </script>
         </body>
     </html>
     `;
