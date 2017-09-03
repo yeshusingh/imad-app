@@ -82,8 +82,9 @@ function createTemplate (data) {
                 console.log('clicked');
 
                 var request = new XMLHttpRequest();
-                
-                
+                request.onreadystatechange = function() {
+                    
+                };
             };
         </script>
         </body>
