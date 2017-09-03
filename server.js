@@ -74,6 +74,8 @@ function createTemplate (data) {
                         
                     </ul>
                 </div>
+                 <script type="text/javascript" src="/ui/mainComment.js">
+                 </script>
             </div>
         </body>
     </html>
