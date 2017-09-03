@@ -73,8 +73,7 @@ function createTemplate (data) {
                     </ul>
                 </div>
             </div>
-        // <script type="text/javascript" src="/ui/mainComment1.js">
-        // </script>
+
         // <script>
         //     console.log('mainComment');
         //     var submitComment = document.getElementById('submit_comment');
