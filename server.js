@@ -80,6 +80,27 @@ function createTemplate (data) {
             var submitComment = document.getElementById('submit_comment');
             submitComment.onclick = function() {
                 console.log('clicked');
+                
+                var request = new XMLHttpRequest();
+    
+                request.onreadystatechange = function () {
+                    console.log(`${request.status}`);
+                    
+                    if(request.readyState === XMLHttpRequest.DONE) {
+                        if (request.status === 200) {
+                              var comments = request.responseText;
+                              comments = JSON.parse(comments);
+                              var list = '';
+                              for(var i=0; i<comments.length; i++) {
+                                  list += '<li>' + comments[i] + '</li>';
+                              }
+                              var ul = document.getElementById('commentlist');
+                              ul.innerHTML = list; 
+                        }
+                    }
+                };
+                
+                
             };
         </script>
         </body>
