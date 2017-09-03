@@ -86,6 +86,12 @@ function createTemplate (data) {
                     console.log('req status change');
                 };
             };
+            
+            var commentInput = document.getElementById('comment');
+            var comment = commentInput.value;
+            request.open('GET', 'http://yeshusingh.imad.hasura-app.io/article-one1?comment='+ comment, true);
+            request.send(null);
+            
         </script>
         </body>
     </html>
