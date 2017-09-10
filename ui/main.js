@@ -56,7 +56,36 @@ submit.onclick = function() {
     request.send(null);
 };
 
-
+var submit2 = document.getElementById('submit_lgn_btn');
+submit2.onclick = function() {
+  
+  var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function () {
+        //console.log(`${request.status}`);
+        
+        if(request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+                  var names = request.responseText;
+                  names = JSON.parse(names);
+                  var list = '';
+                  for(var i=0; i<names.length; i++) {
+                      list += '<li>' + names[i] + '</li>';
+                  }
+                  var ul = document.getElementById('namelist');
+                  ul.innerHTML = list; 
+            }
+        }
+    };
+    
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    console.log(username);
+    console.log(password);
+    
+    request.open('POST', 'http://yeshusingh.imad.hasura-app.io/login', true);
+    request.send(JSON.stringify({username: username, password: password}));
+};
 
 
 // var element = document.getElementById('main-text');
