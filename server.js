@@ -159,8 +159,6 @@ app.get('/articles/:articleName', function(req, res) {
            }
        }
     });
-    
-    
 });
 
 // app.get('/article-two', function(req, res){
