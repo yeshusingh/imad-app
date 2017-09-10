@@ -88,7 +88,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/test-db', function (req, res) {
-    
+    // make a select request
 });
 
 app.get('/ui/style.css', function (req, res) {
